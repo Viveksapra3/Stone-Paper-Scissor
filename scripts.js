@@ -26,15 +26,18 @@ theme.onclick = () => {
 }
 box1.onclick = () =>{
     if(cmp_choice === "Stone"){
-        result.innerText = "It's a tie";    
+        result.innerText = "It's a tie"; 
+        result.style.backgroundColor = "black";
     }
     else if(cmp_choice == "Scissor"){
         result.innerText = "You Won!, stone beats scissor";
         user_score.innerText++;
+        result.style.backgroundColor = "green";
     }
     else{
         result.innerText = "You Lost!, paper beats stone";
         cmp_score.innerText++;
+        result.style.backgroundColor = "maroon";
     }
     cmp_choice = getcmp_choice();
 }
@@ -44,13 +47,16 @@ box2.onclick = () =>{
     if(cmp_choice === "Stone"){
         result.innerText = "You Won!, paper beats stone";    
         user_score.innerText++;
+        result.style.backgroundColor = "green";
     }
     else if(cmp_choice === "Scissor"){
         result.innerText = "You Lost!, scissor beats paper";
         cmp_score.innerText++;
+        result.style.backgroundColor = "maroon";
     }
     else{
         result.innerText = "It's a tie";
+        result.style.backgroundColor = "black";
     }
     cmp_choice = getcmp_choice();
 }
@@ -59,14 +65,17 @@ box2.onclick = () =>{
 box3.onclick = () =>{
     if(cmp_choice === "Stone"){
         result.innerText = "You Lost!, stone beats scissor";
+        result.style.backgroundColor = "maroon";
         cmp_score.innerText++;    
     }
     else if(cmp_choice === "Scissor"){
         result.innerText = "It's a tie";
+        result.style.backgroundColor = "black";
     }
     else{
         result.innerText = "You Won!, scissor beats paper";
         user_score.innerText++;
+        result.style.backgroundColor = "green";
     }
     cmp_choice = getcmp_choice();
 }
