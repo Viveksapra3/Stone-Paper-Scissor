@@ -80,11 +80,15 @@ button{
 
 /* Result CSS */
 .result{
-    margin-top:3%;
     width:50%;
     margin:auto;
+    margin-top:3%;
 }
 #result_text{
+    width: fit-content;
+    padding:1vw;
+    border-radius: 30%;
+    margin: auto;
     text-align: center;
     color: white;
     font-size: 2vw;
